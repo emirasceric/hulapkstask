@@ -8,7 +8,7 @@ import BetterForYou from "./components/betterForYou/BetterForYou";
 import OceanWipes from "./components/oceanWipes/OceanWipes";
 import InstagramSection from "./components/instagramSection/InstagramSection";
 import EmailComponent from "./components/emailComponent/EmailComponent";
-import FooterPage from "./components/footerPage/FooterPage";
+import FooterPage from "./components/FooterPage/FooterPage";
 
 
 
