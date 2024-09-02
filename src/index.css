@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Chronicle Display';
+  src: url('/path-to-your-font/ChronicleDisplay-Regular.woff2') format('woff2'),
+       url('/path-to-your-font/ChronicleDisplay-Regular.woff') format('woff');
+  
+}
+
+@font-face {
+  font-family: 'Chronicle Display';
+  src: url('/path-to-your-font/ChronicleDisplay-Bold.woff2') format('woff2'),
+       url('/path-to-your-font/ChronicleDisplay-Bold.woff') format('woff');
+  
+}
+
+@font-face {
+  font-family: 'Chronicle Display';
+  src: url('/path-to-your-font/ChronicleDisplay-Black.woff2') format('woff2'),
+       url('/path-to-your-font/ChronicleDisplay-Black.woff') format('woff');
+ 
+}
