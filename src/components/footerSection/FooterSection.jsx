@@ -2,7 +2,7 @@ import biomFooter from "../../assets/biomFooter.png";
 import facebookFooter from "../../assets/facebookFooter.png";
 import instagramFooter from "../../assets/instagramFooter.png";
 
-export default function FooterPage() {
+export default function FooterSection() {
   return (
     <div className="relative z-0 ">
       <footer className="footer bg-[#004A4C] bg-opacity-[72%] flex items-center justify-between px-10 h-[30vh] text-[#FFFAFA]">
