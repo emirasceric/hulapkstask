@@ -5,8 +5,13 @@ import instagramFooter from "../../assets/instagramFooter.png";
 export default function FooterSection() {
   return (
     <div className="relative z-0 ">
+
+
       <footer className="footer bg-[#004A4C] bg-opacity-[72%] flex items-center justify-between px-10 h-[30vh] text-[#FFFAFA]">
-        <div className="flex space-x-20 pt-[5%] pl-[20%]">
+       
+       <div className="ml-48 w-9/12 items-center justify-between flex">
+       
+        <div className="emir flex lg:space-x-20 sm:space-x-5 ">
           <a
             href="#"
             className="text-left font-bold text-[14px]  tracking-[1.4px] text-[#FFFAFA] uppercase opacity-100"
@@ -27,11 +32,11 @@ export default function FooterSection() {
           </a>
         </div>
 
-        <div className="flex pt-[5%] justify-center">
-          <img src={biomFooter} alt="Biom Footer Logo" className="h-auto" />
+        <div className="flex     justify-center">
+          <img src={biomFooter} alt="Biom Footer Logo ml" className="h-auto" />
         </div>
 
-        <div className="flex space-x-20 pt-[5%] pr-[20%]">
+        <div className="flex space-x-20 ">
           <a
             href="#"
             className="text-[14px] leading-[20px] font-bold tracking-[1.4px] uppercase"
@@ -50,6 +55,7 @@ export default function FooterSection() {
           >
             Help
           </a>
+        </div>
         </div>
       </footer>
 

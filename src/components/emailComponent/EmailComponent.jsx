@@ -15,12 +15,12 @@ function EmailComponent() {
           launches and more. Plus, get a 10% discount on your next order.
         </div>
         
-        <div className="pl-[20%]">
+        <div className=" flex  pl-[20%]">
   <div className="flex items-center rounded-lg overflow-hidden bg-white">
     <input
       type="text"
       placeholder="Enter your email address"
-      className="flex-grow p-2 outline-none  focus:ring-0 text-left text-[16px] leading-[30px] font-normal text-black tracking-[0px] opacity-100 border-none"
+      className="  outline-none  focus:ring-0 text-left text-[16px] leading-[30px] font-normal text-black tracking-[0px] opacity-100 border-none"
     />
 
     {/* Button */}

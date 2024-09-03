@@ -6,7 +6,8 @@ import MaskGroup12 from "../../assets/MaskGroup12.png";
 
 const MeetBiom = () => {
   return (
-    <div className="emir w-full h-screen flex">
+    <div className="emir w-full h-screen overflow-hidden flex">
+
       <div
         className="w-full h-screen bg-no-repeat bg-cover flex-shrink-0"
         style={{
@@ -15,7 +16,11 @@ const MeetBiom = () => {
           backgroundPosition: "center", // Centriranje slike
         }}
       >
-        <div className="flex flex-col items-start ms-[50%] mt-[10%]">
+
+        <div className="flex mt-16 ml-80 justify-between items-center space-x-5">
+
+        <div className="relative mt-[10%] group ml-[44%] h-full">
+   
           <div>
             <h1 className="text-[1rem] tracking-[0.13rem]  text-[#002D33] uppercase font-brandonSS">
               THE BIOM DISPENSER
@@ -84,6 +89,7 @@ const MeetBiom = () => {
           <button className="w-[10rem] sm:w-[12rem] h-[2.5rem] sm:h-[3.125rem] mt-8 sm:mt-11 font-brandon text-white bg-[#004A4C] rounded-lg flex items-center justify-center text-[0.8125rem] leading-[1.875rem] font-extrabold transition ease-out duration-300 hover:bg-[#023436]">
             SHOP NOW
           </button>
+          </div>
         </div>
       </div>
     </div>
