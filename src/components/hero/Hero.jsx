@@ -2,7 +2,7 @@ import Kitchen from '../../assets/Kitchen_3.png';
 
 const Hero = () => {
   return (
-<div className=' background-white mt-[68px]' >
+<div className=' mt-[68px]' >
     
    <div 
   className="relative zIndex-2 bg-no-repeat bg-cover rounded-[14px] opacity-1"
