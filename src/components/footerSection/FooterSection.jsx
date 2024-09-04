@@ -9,9 +9,9 @@ export default function FooterSection() {
 
       <footer className="footer bg-[#004A4C] bg-opacity-[72%] flex items-center justify-between px-10 h-[30vh] text-[#FFFAFA]">
        
-       <div className="ml-48 w-9/12 items-center justify-between flex">
+       <div className=" emir ml-5 sm:ml-20 lg:ml-28 xl:ml-48 w-9/12 items-center justify-between flex">
        
-        <div className="emir flex lg:space-x-20 sm:space-x-5 ">
+        <div className=" flex  space-x-5 lg:space-x-10   xl:space-x-20 ">
           <a
             href="#"
             className="text-left font-bold text-[14px]  tracking-[1.4px] text-[#FFFAFA] uppercase opacity-100"
@@ -36,7 +36,7 @@ export default function FooterSection() {
           <img src={biomFooter} alt="Biom Footer Logo ml" className="h-auto" />
         </div>
 
-        <div className="flex space-x-20 ">
+        <div className="flex    space-x-5 lg:space-x-10 xl:space-x-20">
           <a
             href="#"
             className="text-[14px] leading-[20px] font-bold tracking-[1.4px] uppercase"
