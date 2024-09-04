@@ -16,7 +16,7 @@ import FooterSection from "./components/footerSection/FooterSection";
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App background-white">
       <NavBar/>     
       <Hero/>      
       <MeetBiom/> 

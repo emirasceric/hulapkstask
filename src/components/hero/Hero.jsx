@@ -1,8 +1,9 @@
-
 import Kitchen from '../../assets/Kitchen_3.png'; 
 
 const Hero = () => {
   return (
+<div className=' background-white mt-[68px]' >
+    
    <div 
   className="relative zIndex-2 bg-no-repeat bg-cover rounded-[14px] opacity-1"
   style={{
@@ -11,7 +12,6 @@ const Hero = () => {
     width: 'calc(100% - 2%)', // 100% širine minus 5% margina sa obje strane
     marginLeft: '1%',
     marginRight: '1%',
-    marginTop: '80px', // Visina navigacione trake
   }}
 >
 
@@ -39,7 +39,7 @@ const Hero = () => {
         </button>
       </div>
     </div>
-  </div>
+  </div></div>
     </div>
   );
 };
