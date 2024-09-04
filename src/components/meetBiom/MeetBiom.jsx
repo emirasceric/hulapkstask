@@ -8,7 +8,7 @@ import nonToxicIcon from "../../assets/nonToxicIcon.png";
 ;
 
 const MeetBiom = () => {
-  const initialPosition = -24;
+  const initialPosition = -14;
   const [scrollPosition, setScrollPosition] = useState(initialPosition);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -31,13 +31,13 @@ const MeetBiom = () => {
     <div className="w-full h-screen flex relative">
       {/* Transparentni sloj za hvatanje hover i scroll događaja */}
       <div 
-        className="absolute w-[25%] h-screen -ml-28 z-30" 
+        className="absolute w-[25%] h-screen  z-30" 
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       ></div>
 
       {/* Tekst "meet biom" sa manjim z-index-om */}
-      <div className="w-[40%] h-screen xl:-ml-52 2xl:-ml-28 overflow-hidden flex relative z-1">
+      <div className="w-[40%] absolute h-screen hidden lg:block  lg:-ml-18 xl:-ml-24 2xl:-ml-36 overflow-hidden   z-1">
         <p
           className="whitespace-nowrap transform -rotate-90 text-left text-[225px] leading-[322px] font-bold text-[#F2F2F2] tracking-[-5.63px] font-brandonSS opacity-100 transition-transform duration-4300 ease-out"
           style={{ transform: `translateY(${scrollPosition}%) rotate(-90deg)` }}
@@ -48,19 +48,19 @@ const MeetBiom = () => {
 
       {/* Pozadinska slika sa višim z-index-om */}
       <div
-        className="w-full h-screen bg-no-repeat bg-cover z-20 flex-shrink-0 absolute top-0 left-0"
+        className="w-full h-screen bg-no-repeat  md:block bg-cover z-10  absolute top-0 left-0"
         style={{
           backgroundImage: `url(${MaskGroup12})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+         
+        
         }}
       >
         
 
-        <div className="flex mt-16 ml-80 justify-between items-center space-x-5">
+        <div className="flex mt-16  space-x-5">
 
 
-        <div className="relative mt-[10%] group ml-[44%] h-full">
+        <div className="relative mt-[10%] group ml-24 lg:ml-[48%] pr-6 h-full">
    
           <div>
             <h1 className="text-[1rem] tracking-[0.13rem]  text-[#002D33] uppercase font-brandonSS">
@@ -83,7 +83,7 @@ const MeetBiom = () => {
             </p>
           </div>
 
-          <div className=" relative z-0 grid grid-cols-[1fr_5fr] gap-y-4 mt-5 ">
+          <div className=" relative z-0 grid grid-cols-[1fr_5fr] gap-y-4 sm:ml-6 mt-5 ">
             <div>
               <img
                 src={beautifulDesignIcon}
@@ -127,7 +127,7 @@ const MeetBiom = () => {
             </div>
           </div>
 
-          <button className="w-[10rem] sm:w-[12rem] h-[2.5rem] sm:h-[3.125rem] mt-8 sm:mt-11 font-brandon text-white bg-[#004A4C] rounded-lg flex items-center justify-center text-[0.8125rem] leading-[1.875rem] font-extrabold transition ease-out duration-300 hover:bg-[#023436]">
+          <button className="w-[10rem] sm:w-[12rem] h-[2.5rem] sm:h-[3.125rem] mt-8 sm:mt-11 ml-6 font-brandon text-white bg-[#004A4C] rounded-lg flex items-center justify-center text-[0.8125rem] leading-[1.875rem] font-extrabold transition ease-out duration-300 hover:bg-[#023436]">
             SHOP NOW
           </button>
           </div>

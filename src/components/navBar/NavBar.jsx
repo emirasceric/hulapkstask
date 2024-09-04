@@ -4,7 +4,7 @@ import logoBiom from '../../assets/logo.png';
 const NavBar = () => {
   return (
     <nav
-    className="fixed z-10 backdrop-blur-lg bg-white/75 top-0  w-full h-[68px] font-brandonSS font-bold text-custom tracking-wide uppercase bg-white flex items-center justify-between px-8"
+    className="fixed z-20 backdrop-blur-lg bg-white/75 top-0  w-full h-[68px] font-brandonSS font-bold text-custom tracking-wide uppercase bg-white flex items-center justify-between px-8"
   >
       {/* Lijeva strana */}
       <div className="flex items-center space-x-6">

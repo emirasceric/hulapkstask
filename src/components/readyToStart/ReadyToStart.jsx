@@ -5,7 +5,7 @@ import Black2 from "../../assets/Black2.png";
 
 function ReadyToStart() {
   return (
-    <div className="emir max-w-full h-[50vh] flex flex-row mt-16">
+    <div className="emir max-w-full h-[50vh] flex flex-row  mt-16">
 
 
       <div className="content-center mt-24 w-3/12 ml-16">
@@ -16,7 +16,7 @@ function ReadyToStart() {
 
         <div className="mt-[1em] mb-[25vh]">
 
-          <button className="cursor-default absolute h-[3.125em] flex items-center justify-between border-2 border-[#004A4C] text-[#004A4C] font-bold tracking-wide rounded-lg group">
+          <button className="cursor-default absolute  h-[3.125em] flex items-center justify-between border-2 border-[#004A4C] text-[#004A4C] font-bold tracking-wide rounded-lg group">
             
             <span className="cursor-default font-brandonSS text-[0.6875em] pr-[1em] pl-[1em]">
               CHOOSE YOUR VESSEL COLOR
