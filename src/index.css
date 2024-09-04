@@ -22,3 +22,7 @@
        url('/path-to-your-font/ChronicleDisplay-Black.woff') format('woff');
  
 }
+
+body {
+  background: #ffffff;
+}
