@@ -37,9 +37,9 @@ const MeetBiom = () => {
       ></div>
 
       {/* Tekst "meet biom" sa manjim z-index-om */}
-      <div className="w-[25%] h-screen -ml-28 overflow-hidden flex relative z-1">
+      <div className="w-[40%] h-screen xl:-ml-52 2xl:-ml-28 overflow-hidden flex relative z-1">
         <p
-          className="whitespace-nowrap transform -rotate-90 text-left text-[225px] leading-[322px] font-bold text-[#F2F2F2] tracking-[-5.63px] font-brandonSS opacity-100 transition-transform duration-500 ease-out"
+          className="whitespace-nowrap transform -rotate-90 text-left text-[225px] leading-[322px] font-bold text-[#F2F2F2] tracking-[-5.63px] font-brandonSS opacity-100 transition-transform duration-4300 ease-out"
           style={{ transform: `translateY(${scrollPosition}%) rotate(-90deg)` }}
         >
           meet biom
