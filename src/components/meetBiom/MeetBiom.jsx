@@ -37,7 +37,7 @@ const MeetBiom = () => {
       ></div>
 
       {/* Tekst "meet biom" sa manjim z-index-om */}
-      <div className="w-[40%] absolute h-screen hidden lg:block  lg:-ml-18 xl:-ml-24 2xl:-ml-36 overflow-hidden   z-1">
+      <div className="w-[40%] absolute h-screen hidden lg:block  lg:-ml-18 xl:-ml-24 2xl:-ml-36    overflow-hidden   z-1">
         <p
           className="whitespace-nowrap transform -rotate-90 text-left text-[225px] leading-[322px] font-bold text-[#F2F2F2] tracking-[-5.63px] font-brandonSS opacity-100 transition-transform duration-4300 ease-out"
           style={{ transform: `translateY(${scrollPosition}%) rotate(-90deg)` }}
@@ -60,16 +60,16 @@ const MeetBiom = () => {
         <div className="flex mt-16  space-x-5">
 
 
-        <div className="relative mt-[10%] group ml-24 lg:ml-[48%] pr-6 h-full">
+        <div className="relative mt-[10%] lg:mt-[5%]  group mx-8 lg:ml-[48%]  pr-6 h-full">
    
-          <div>
+          <div className=" ">
             <h1 className="text-[1rem] tracking-[0.13rem]  text-[#002D33] uppercase font-brandonSS">
               THE BIOM DISPENSER
             </h1>
           </div>
 
           <div>
-            <h1 className="text-[2.25rem]   leading-[3.4rem]  tracking-[0] text-[#002D33] font-extrabold font-chronicle lg:mt-1 mt-4">
+            <h1 className="text-[1.7rem] sm:text-[2.25rem]  leading-[2.4rem]   sm:leading-[3.4rem]  tracking-[0] text-[#002D33] font-extrabold font-chronicle lg:mt-1 mt-4">
               Redefine your experience of clean.
             </h1>
           </div>

@@ -23,7 +23,7 @@ export default function BetterForYou() {
       ></div>
 
       {/* Sadržaj */}
-      <div className="relative  w-10/12  lg:w-7/12   pr-5 lg:-ml-36  rounded-tr-lg rounded-br-lg bg-[#DAE5E5] z-1 ">
+      <div className="relative  w-10/12  lg:w-7/12   pr-5 lg:-ml-36 rounded-lg sm:rounded-tr-lg sm:rounded-br-lg bg-[#DAE5E5] z-1 ">
         <div>
           <h1 className="text-[1rem] tracking-[0.13rem] px-5 sm:px-24   lg:pl-36 pt-[10%] text-[#002D33] uppercase font-brandonSS">
             BIOM WIPES

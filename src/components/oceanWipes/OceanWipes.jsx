@@ -20,21 +20,21 @@ export default function OceanWipes() {
 
     <div className="flex  items-center ">
       <div className="absolute inset-0 flex px-6 flex-col top-[%] justify-center items-center">
-        <p className="text-center text-[14px] leading-[62px] font-normal tracking-[2.1px] text-[#FFFAFA] uppercase opacity-100 font-brandonSS">
+        <p className="text-center text-[10px] sm:text-[14px] leading-[62px] font-normal tracking-[2.1px] text-[#FFFAFA] uppercase opacity-100 font-brandonSS">
           CLEANING OUR OCEANS WITH EVERY WIPE
         </p>
 
-        <p className="text-center text-[36px] leading-[62px] font-black tracking-[0px] text-[#FFFAFA] uppercase opacity-100 font-chronicle">
+        <p className="text-center text-[26px] sm:text-[36px] leading-[42px]  sm:leading-[62px] font-black tracking-[0px] text-[#FFFAFA] uppercase opacity-100 font-chronicle">
           Wipes have plastic in them. We don’t.
         </p>
-        <p className="text-center mt-4 text-[18px] leading-[28px] font-normal tracking-[0px] text-[#FFFAFA] opacity-100 font-brandonSS">
+        <p className="text-center mt-4 text-[14px]  sm:text-[18px]  leading-[24px] sm:leading-[28px] font-normal tracking-[0px] text-[#FFFAFA] opacity-100 font-brandonSS">
           We reinvented wipes to cut out all the bad stuff —like single-use
           plastic that hurts the <br />
           environment, and toxic chemicals that don’t belong in our oceans (or
           in our homes).
         </p>
              
-        <button className="  mt-8 w-[207px]  h-[50px] font-extrabold text-[13px] leading-[30px] font-brandonSS text-get-started bg-white rounded-lg flex items-center justify-center transition ease-out duration-300 hover:bg-gray-200">
+        <button className="  mt-16 sm:mt-8 w-[147px]  h-[40px]  sm:w-[207px]  sm:h-[50px] font-extrabold text-[12px] sm:text-[13px] leading-[30px] font-brandonSS text-get-started bg-white rounded-lg flex items-center justify-center transition ease-out duration-300 hover:bg-gray-200">
         LEARN MORE
       </button>
       

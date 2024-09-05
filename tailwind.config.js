@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         brandonSS: ['Brandon Grotesque', 'sans-serif'],
-        brandon: ['Brandon Grotesque', 'serif'],
+        brandon: ['Brandon Grotesque', 'regular'],
         chronicle: ['Chronicle Display', 'serif'], 
       },
       fontSize: {
