@@ -7,7 +7,7 @@ import plantBasedIcon from "../../assets/plantBasedIcon.png";
 export default function BetterForYou() {
   return (
     <div className="relative mb-12 sm:my-16  flex lg:flex-row flex-col  justify-center items-center">
-      {/* Pozadinske slike */}
+      {/* Background images */}
       <div
         className="  hidden lg:block lg:w-[40vh]  -mt-3 lg:h-[80vh] bg-cover bg-no-repeat bg-center z-2 "
         style={{
@@ -22,7 +22,7 @@ export default function BetterForYou() {
         }}
       ></div>
 
-      {/* Sadržaj */}
+      {/* Content */}
       <div className="relative  w-10/12  lg:w-7/12   pr-5 lg:-ml-36 rounded-lg sm:rounded-tr-lg sm:rounded-br-lg bg-[#DAE5E5] z-1 ">
         <div>
           <h1 className="text-[1rem] tracking-[0.13rem] px-5 sm:px-24   lg:pl-36 pt-[10%] text-[#002D33] uppercase font-brandonSS">
@@ -49,12 +49,8 @@ export default function BetterForYou() {
 
         <div className="relative z-0 px-5 sm:px-24  lg:pl-52   gap-y-5 mt-8">
           <div className="flex flex-row gap-8 mb-5 items-center  ">
-          <div className="max-w-20">
-              <img
-                src={biodegradableIcon}
-                alt="biodegradableIcon"
-                
-              />
+            <div className="max-w-20">
+              <img src={biodegradableIcon} alt="biodegradableIcon" />
             </div>
 
             <div className="flex flex-row items-center h-full ">
@@ -65,12 +61,8 @@ export default function BetterForYou() {
           </div>
 
           <div className="flex flex-row gap-8  mb-5 items-center  ">
-          <div className="max-w-20">
-              <img
-                src={plasticFreeIcon}
-                alt="plasticFreeIcon"
-                
-              />
+            <div className="max-w-20">
+              <img src={plasticFreeIcon} alt="plasticFreeIcon" />
             </div>
 
             <div className="flex items-center h-full">
@@ -82,11 +74,7 @@ export default function BetterForYou() {
 
           <div className="flex flex-row gap-8  items-center  ">
             <div className="max-w-20">
-              <img
-                src={plantBasedIcon}
-                alt="plantBasedIcon"
-                
-              />
+              <img src={plantBasedIcon} alt="plantBasedIcon" />
             </div>
 
             <div className="flex items-center h-full">

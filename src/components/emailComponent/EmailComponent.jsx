@@ -3,13 +3,16 @@ import BiomWipe2 from "../../assets/BiomWipe2.png";
 
 function EmailComponent() {
   return (
+
+    // Image appears only on larger screens 
+
     <div
       className="relative z-10 flex flex-col sm:flex-row mx-[5%] mb-[-5%] bg-[#F2F2F2] sm:bg-none bg-cover bg-center"
       style={{
-        backgroundImage: `url(${BiomWipe2})`, // Postavljanje slike kao pozadine za manje ekrane
+        backgroundImage: `url(${BiomWipe2})`
       }}
     >
-      {/* Tekstualni deo */}
+      {/* Text section */}
       <div className="flex flex-col py-6 w-full px-6 sm:px-16 sm:w-[60%] space-y-4 bg-[#F2F2F2] sm:bg-none">
         <div className="text-left font-black font-chronicle text-[30px] leading-[38px] text-[#000000] opacity-100">
           Get the latest news <br /> delivered to your inbox.
@@ -39,7 +42,7 @@ function EmailComponent() {
           </div>
         </div>
 
-        {/* Slika se pojavljuje samo na većim ekranima */}
+        
       </div>
     </div>
   );

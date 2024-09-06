@@ -7,9 +7,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        brandonSS: ['Brandon Grotesque', 'sans-serif'],
-        brandon: ['Brandon Grotesque', 'regular'],
-        chronicle: ['Chronicle Display', 'serif'], 
+        brandonSSs: ['Brandon Grotesque', 'sans-serif'],
+        brandonn: ['Brandon Grotesque', 'regular'],
+        chronicleee: ['Chronicle Display', 'serif'], 
+
+
+        brandonSS: ['"Cabin"', 'sans-serif'],
+        brandon: ['"Cabin"', 'regular'],
+        chronicle: ['Lora', 'serif'],
       },
       fontSize: {
         custom: ['15px', '22px', 'bold'], // 15px font size with 22px line-height
