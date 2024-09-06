@@ -4,7 +4,7 @@ import KitchenShot3 from '../../assets/KitchenShot3.png';
 
 function WhenYouNeedIt() {
   return (
-    <div className="emir relative ml-[1%] mr-[1%] px-6 md:px-0 flex md:flex-row flex-col gap-6   justify-between items-center mt-16"> 
+    <div className="relative ml-[1%] mr-[1%] px-6 md:px-0 flex md:flex-row flex-col gap-6   justify-between items-center mt-16"> 
       
       <div className=" w-full md:w-[31%]  h-[415px]   md:rounded-tr-[3%] md:rounded-br-[3%] overflow-hidden group">
         <div

@@ -6,7 +6,7 @@ export default function FooterSection() {
   return (
     <div className="flex flex-col w-full z-0">
       <footer className="bg-[#004A4C] bg-opacity-[72%] flex items-center w-full justify-between h-[30vh] text-[#FFFAFA]">
-        <div className="flex flex-col md:flex-row w-full items-center justify-between px-4 md:px-28 lg:px-16 xl:px-48 2xl:px-96 2xl:mx-16 mx space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row w-full items-center justify-between px-4 md:px-20 lg:px-32 xl:px-48 2xl:px-66 2xl:mx-16 mx space-y-6 md:space-y-0">
           {/* Logo za mobilne uređaje */}
           <div className="block md:hidden mb-4">
             <img
@@ -17,7 +17,7 @@ export default function FooterSection() {
           </div>
 
           {/* Linkovi na levoj strani */}
-          <div className="flex space-x-3 md:space-x-6 lg:space-x-10 xl:space-x-20 text-center font-bold text-[14px] tracking-[1.4px] text-[#FFFAFA] uppercase opacity-100">
+          <div className="flex space-x-3 md:space-x-6 lg:space-x-10 xl:space-x-20 2xl:space-x-20  text-center font-bold text-[14px] tracking-[1.4px] text-[#FFFAFA] uppercase opacity-100">
             <a href="#" className="">
               Shop
             </a>
@@ -39,7 +39,7 @@ export default function FooterSection() {
           </div>
 
           {/* Linkovi na desnoj strani */}
-          <div className="flex space-x-3 md:space-x-6 lg:space-x-10 xl:space-x-20 font-bold text-[14px] tracking-[1.4px] text-[#FFFAFA] uppercase opacity-100">
+          <div className="flex space-x-3 md:space-x-6 lg:space-x-10 xl:space-x-20 2xl:space-x-25 font-bold text-[14px] tracking-[1.4px] text-[#FFFAFA] uppercase opacity-100">
             <a href="#" className="e">
               FAQs
             </a>

@@ -14,7 +14,7 @@ const Hero = () => {
         }}
       >
         {/* Dodajemo flex, items-center i justify-center da centriramo vertikalno */}
-        <div className="emir flex flex-col  justify-center h-full px-11 pr-5">
+        <div className="flex flex-col  justify-center h-full px-11 pr-5">
           <div className="">
             <h1 className="font-bold text-[56px] leading-[62px] font-chronicle text-white">
               So fresh. <br /> So green.

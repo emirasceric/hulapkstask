@@ -5,73 +5,83 @@ import Black2 from "../../assets/Black2.png";
 
 function ReadyToStart() {
   return (
-    <div className="emir max-w-full h-[50vh] flex flex-row  mt-16">
-
-      <div className="content-center mt-24 w-3/12 ml-16">
+    <div className="max-w-full h-auto flex flex-col lg:flex-row  mt-16">
       
-        <div className=" font-chronicle text-left font-black sm:text-[1.755em]   lg:text-[2em] xl:text-[2.25em] leading-[1em] tracking-[0em] text-black opacity-100">
-          Ready to start <br /> wiping out waste?
-        </div>
-
-        <div className="mt-4 mb-32">
-          <button className="cursor-default absolute  sm:h-[2.5em] lg:h-[2.9em]  xl:h-[3.125em] flex items-center justify-between border-2 border-[#004A4C] text-[#004A4C] font-bold tracking-wide rounded-lg group">
-            <span className="cursor-default font-brandonSS text-[0.3875em] sm:text-[0.5em] xl:text-[0.6875em] pr-[1em] pl-[1em]">
-              CHOOSE YOUR VESSEL COLOR
-            </span>
-
-            <div className="flex items-center h-full pr-[0.75em]">
-              <div className="border-l-2 border-black h-[100%] mr-[0.5em]"></div>
-              <img
-                src={arrow1}
-                alt="Instagram Icon"
-                className="cursor-default h-[em] w-[2em] transition-transform duration-300 group-hover:translate-x-[0.3em]"
-              />
-            </div>
-          </button>
-        </div>
+      <div className="flex flex-col items-center justify-center text-center md:items-start md:text-left md:justify-start lg:ml-16 mt-11 md:mt-24 mb-8 md:mb-20 w-full xl:w-3/12">
+  <div className="font-chronicle font-black text-[1.755em] sm:text-[2em] lg:text-[2.25em] leading-tight text-black">
+    Ready to start <br /> wiping out waste?
+  </div>
+  <div className="mt-4 flex justify-center md:justify-start w-full">
+    <button className="cursor-default h-[2.9em] sm:h-[3.125em] flex items-center justify-between border-2 border-[#004A4C] text-[#004A4C] font-bold tracking-wide rounded-lg group">
+      <span className="font-brandonSS text-[0.5em] sm:text-[0.6875em] px-[1em]">
+        CHOOSE YOUR VESSEL COLOR
+      </span>
+      <div className="hidden md:flex items-center h-full pr-[0.75em]">
+        <div className="border-l-2 border-black h-full mr-[0.5em]"></div>
+        <img
+          src={arrow1}
+          alt="Arrow Icon"
+          className="h-[1em] w-[1.5em] transition-transform duration-300 group-hover:translate-x-[0.3em]"
+        />
       </div>
+    </button>
+  </div>
+</div>
 
-      <div className="flex flex-row  w-8/12 justify-between items-center space-x-5">
-        <div className="relative group w-1/3 h-full">
-          <div
-            className="w-full h-full bg-cover bg-center transition-all duration-500 ease-in-out group-hover:translate-x-[60px]"
-            style={{ backgroundImage: `url(${Green1})` }}
-          ></div>
-          <div className="absolute bottom-[1em]  transform -translate-y-1/2 w-[10.1875em] h-[3.375em] text-left tracking-[0em] text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-            <p className="font-chronicle text-left font-black text-[1.25em]">
+
+      {/* Desna strana sa slikama */}
+
+      <div className="flex flex-col lg:flex-row w-full lg:w-8/12  xl:mt-8  lg:mt-0 ">
+
+        <div className="group w-full sm:w-1/3 flex flex-col  items-start">
+          <div className="w-full aspect-w-1 aspect-h-1 transition-all duration-500 ease-in-out md:group-hover:translate-x-[60px]">
+            <img
+              src={Green1}
+              alt="Biom Dispenser - OCEAN TEA"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="text-left  -mt-24  ">
+            <p className="font-chronicle font-black text-[1.25em] text-left text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               Biom Dispenser
             </p>
-            <p className="font-chronicle text-left font-black text-[0.8125em]">
+            <p className="font-chronicle font-black text-[0.8125em] text-left text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               OCEAN TEA
             </p>
           </div>
         </div>
 
-        <div className="relative group w-1/3 h-full">
-          <div
-            className="w-full h-full bg-cover bg-center transition-all duration-500 ease-in-out group-hover:translate-x-[60px]"
-            style={{ backgroundImage: `url(${Biomfn20})` }}
-          ></div>
-          <div className="absolute bottom-[1em]  transform -translate-y-1/2 w-[10.1875em] h-[3.375em] text-left tracking-[0em] text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-            <p className="font-chronicle text-left font-black text-[1.25em]">
+        <div className="group w-full  sm:w-8/12 md:w-2/3 lg:w-1/3 flex flex-col items-start mt-8 sm:mt-0">
+          <div className="w-full  aspect-w-1 aspect-h-1 transition-all duration-500 ease-in-out md:group-hover:translate-x-[60px]">
+            <img
+              src={Biomfn20}
+              alt="Biom Dispenser - WHITE"
+              className="w-full mt-16 md:mt-0 h-full object-contain"
+            />
+          </div>
+          <div className="text-left  -mt-24  ">
+            <p className="font-chronicle font-black text-[1.25em] text-left text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               Biom Dispenser
             </p>
-            <p className="font-chronicle text-left font-black text-[0.8125em]">
+            <p className="font-chronicle font-black text-[0.8125em] text-left text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               WHITE
             </p>
           </div>
         </div>
 
-        <div className="relative group w-1/3 h-full">
-          <div
-            className="w-full h-full bg-cover bg-center transition-all duration-500 ease-in-out group-hover:translate-x-[60px]"
-            style={{ backgroundImage: `url(${Black2})` }}
-          ></div>
-          <div className="absolute bottom-[1em] transform -translate-y-1/2 w-[10.1875em] h-[3.375em] text-left tracking-[0em] text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-            <p className="font-chronicle text-left font-black text-[1.25em]">
+        <div className=" mb-12 group w-full sm:w-1/3 flex flex-col items-start mt-8 sm:mt-0">
+          <div className="w-full aspect-w-1 aspect-h-1 transition-all duration-500 ease-in-out md:group-hover:translate-x-[60px]">
+            <img
+              src={Black2}
+              alt="Biom Dispenser - INK BLACK"
+              className="w-full h-full mt-16 md:mt-0  object-contain"
+            />
+          </div>
+          <div className="text-left  -mt-24  ">
+            <p className="font-chronicle font-black text-[1.25em] text-left text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               Biom Dispenser
             </p>
-            <p className="font-chronicle text-left font-black text-[0.8125em]">
+            <p className="font-chronicle font-black text-[0.8125em] text-left text-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               INK BLACK
             </p>
           </div>

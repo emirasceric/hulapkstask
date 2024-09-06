@@ -1,15 +1,15 @@
-import logoBiom from '../../assets/logo.png';
+
 
 function NavBarBurger() {
   return (
-    <div>
+    <div className=" ">
 
 
 
-<div className="navbar bg-base-100">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+<div className="navbar outline-none border-none shadow-none">
+  <div className="navbar-start outline-none border-none">
+    <div className="dropdown outline-none border-none">
+      <div tabIndex={0} role="button" className="btn bg-transparent outline-none border-none shadow-none w-16">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -20,12 +20,12 @@ function NavBarBurger() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h7" />
+            d="M4 6h38M4 12h38M4 18h38" />
         </svg>
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li><a>  SHOP</a></li>
         <li><a> WHY BIOM</a></li>
         <li><a>SCENTS</a></li>
