@@ -10,11 +10,29 @@ const MeetBiom = () => {
   const [scrollPosition, setScrollPosition] = useState(initialPosition); // State for tracking scroll position
   const [isHovered, setIsHovered] = useState(false); // State to check if the section is hovered
 
+  // Define scroll limits
+  const containerHeight = document.documentElement.clientHeight; // Get the height of the container or viewport
+
+  const minScroll = -(containerHeight * 0.16); 
+  const maxScroll = containerHeight * 0.26;    
+  
+
   // Handle the scroll event when the user hovers over the left area
   const handleScroll = (event) => {
     if (isHovered) {
       event.preventDefault();
-      setScrollPosition((prev) => prev + event.deltaY * 0.5); // Modify the scroll position based on wheel movement
+      setScrollPosition((prev) => {
+        const newPosition = prev + event.deltaY * 0.5;
+
+        // Restrict the scroll position between minScroll and maxScroll
+        if (newPosition < minScroll) {
+          return minScroll;
+        } else if (newPosition > maxScroll) {
+          return maxScroll;
+        } else {
+          return newPosition;
+        }
+      });
     }
   };
 

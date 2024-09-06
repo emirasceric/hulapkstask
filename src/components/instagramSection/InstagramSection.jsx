@@ -14,23 +14,42 @@ function InstagramSection() {
   useEffect(() => {
     const handleScroll = (e) => {
       if (isHovered) {
-        e.preventDefault(); // Prevent default vertical scroll when hovered
-        
-        // Check if horizontal scroll (deltaX) is available
-        if (e.deltaX !== 0) {
-          setScrollX((prevScrollX) => prevScrollX + e.deltaX * 0.5); // Scroll horizontally
-        } else {
-          setScrollX((prevScrollX) => prevScrollX + e.deltaY * 0.5); // Convert vertical scroll to horizontal scroll
+       
+
+        // Horizontal scroll for touchpad gestures and arrow keys
+        if (e.deltaY !== 0) {
+          setScrollX((prevScrollX) => prevScrollX + e.deltaY * 0.5); // Horizontal scroll on touchpad
         }
       }
     };
 
-    // Add wheel event listener with { passive: false } to enable event.preventDefault
+    // Add event listener for wheel scroll when hovering over the images
     window.addEventListener("wheel", handleScroll, { passive: false });
 
-    // Remove the event listener when the component is unmounted
+    // Remove event listener when the component unmounts
     return () => {
       window.removeEventListener("wheel", handleScroll);
+    };
+  }, [isHovered]);
+
+  // Handle keyboard arrow keys for horizontal scrolling
+  const handleKeyDown = (e) => {
+    if (isHovered) {
+      if (e.key === "ArrowRight") {
+        setScrollX((prevScrollX) => prevScrollX + 50); // Move right on right arrow key
+      } else if (e.key === "ArrowLeft") {
+        setScrollX((prevScrollX) => prevScrollX - 50); // Move left on left arrow key
+      }
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener for keydown
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, [isHovered]);
 
@@ -39,6 +58,7 @@ function InstagramSection() {
       className="relative mt-16 overflow-hidden mb-16"
       onMouseEnter={() => setIsHovered(true)} // Set hovered to true when mouse enters
       onMouseLeave={() => setIsHovered(false)} // Set hovered to false when mouse leaves
+      tabIndex={0} // To allow the div to listen to keyboard events
     >
       {/* Section title */}
       <h1 className="text-center font-black mb-16 text-[36px] sm:text-[46px] leading-[44px] tracking-[0px] text-[#002D33] opacity-100 font-chronicle">
